@@ -4,16 +4,16 @@ _color () {
 }
 
 _log () {
-  _color 148 $(date) "$@"
+    _color 148 $(date) "$@"
 }
 
 pkg install -y git
 pkg install termux-api
 
 #---
-echo "[$(date)] install"
+_log install
 pkg install -y curl 
 curl -OL https://raw.githubusercontent.com/BuildAPKs/buildAPKs/master/setup.buildAPKs.bash
-bash setup.buildAPKs.bash
+# bash setup.buildAPKs.bash
 
 pkg install python
