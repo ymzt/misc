@@ -1,1 +1,1 @@
-pkg install git
+pkg install -y git
