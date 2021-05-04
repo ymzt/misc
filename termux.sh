@@ -16,4 +16,4 @@ pkg install -y curl
 curl -OL https://raw.githubusercontent.com/BuildAPKs/buildAPKs/master/setup.buildAPKs.bash
 # bash setup.buildAPKs.bash
 
-pkg install python
+pkg install -y python
